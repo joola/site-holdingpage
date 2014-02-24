@@ -1,0 +1,800 @@
+/*
+    Simpler - A Responsive Under Construction Theme by Gioska :: style-launch.css
+    Designed and Developed by Giovanni Filippi
+    
+    
+-------------------------------------------------------------------------------
+    
+    TABLE OF CONTENTS
+
+    0.  MAIN
+    1.  PRIMARY STYLES
+        1.0 Default
+        1.1 Header
+            1.1.1 Logo
+        1.2 Content
+        1.3 Footer
+    2.  PROGRESS BAR - COUNTDOWN
+    3.  BUTTONS
+    2.  HELPER CLASSES
+    3.  MEDIA QUERIES
+        3.1 Screen Size < 520px
+    4.  PRINT
+
+---------------------------------------------------------------------------------*/
+
+/* ==========================================================================
+   0. Main
+   ========================================================================== */
+
+
+
+#success_page {
+  margin-bottom: 0px;
+  text-align:center;
+
+}
+
+#success_page h2{
+  font-size: 18px;
+}
+
+
+.error_message {
+  margin-bottom:10px;
+  text-align:center;
+}
+
+/* Index page Items */
+
+.without-slideshow a{
+  background: url(../images/background/beach.jpg) no-repeat center center;
+  margin: 0 0 30px;
+}
+
+.row-fluid .offset1 {
+  margin-left: 10.638297872340425%;
+  *margin-left: 10.53191489361702%;
+}
+
+.row-fluid .offset1:first-child {
+  margin-left: 8.51063829787234%;
+  *margin-left: 8.404255319148938%;
+}
+
+.span5 {
+  width: 200px;
+}
+
+.row {
+  margin-left: 0px;
+  *zoom: 1;
+}
+
+.row:before,
+.row:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.row:after {
+  clear: both;
+}
+
+[class*="span"] {
+  float: left;
+  min-height: 1px;
+  margin-left: 20px;
+}
+
+
+.nav-content{
+  padding-top: 20px;
+}
+.nav-content:{
+  left: 0px;
+  opacity: 1;
+}
+.nav-content a{
+  text-align: center;
+  display: block;
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+  border: 2px solid #fff;
+  padding: 2%;
+  font-size: 14px;
+  text-shadow: 0px 0px 10px rgba(255,255,255,0.9);
+  color: rgba(255,255,255,0.1);
+  line-height: 46px;
+  margin: 0 0 20px 0;
+  outline: none;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+  -webkit-background-size: 0%; -moz-background-size: 0%; -o-background-size: 0%; background-size: 0%;
+  background-clip: padding-box;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.nav-content a:hover{
+  box-shadow: 1px 3px 7px rgba(0,0,0,0.25);
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+  color: rgba(255,255,255,0.9);
+  border: 2px solid #ccc;
+}
+
+
+
+/* ==========================================================================
+   0. Main
+   ========================================================================== */
+
+
+
+html,
+input,
+select,
+textarea {
+  color: #FFF;
+}
+
+html,
+body{
+  min-height:100%;
+  min-width: 99%;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.4;
+  font-family: 'Lato', sans-serif;
+}
+
+@media all and (-webkit-min-device-pixel-ratio:10000), not all and (-webkit-min-device-pixel-ratio:0) {
+  body {
+    font-size: .875em;
+  }
+}
+
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #ff9409;
+  color: #FFF;
+  text-shadow: none;
+}
+
+::selection {
+  background: #ff9409;
+  color: #FFF;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+images {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* 
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Primary Styles
+   ========================================================================== */
+
+/* 11.3.1 DEFAULT
+    ----------------------------------------------------- */
+.container {
+  width: 680px;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+}
+
+h1.headline,
+h2.headline {
+  font-size: 1.7em;
+}
+h1.headline {
+  font-size: 2.2em;
+  font-weight: 800;
+  text-shadow: 0 -1px 0 #555;
+  -webkit-margin-before: 0;
+}
+h2.headline {
+  font-weight: 300;
+}
+h2.headline,
+p {
+  text-shadow: 0 1px 0 rgba(0,0,0,.4);
+}
+p {
+  font: 300 16px/24px 'Lato', sans-serif;
+  margin: 20px 0 40px;
+}
+
+p.center {
+  font: 300 16px/24px 'Lato', sans-serif;
+  margin: 0px 0 20px;
+}
+
+
+/* 11.3.1 HEADER
+    ----------------------------------------------------- */
+
+header[role="banner"] {}
+
+/* 11.3.1 LOGO
+----------------------------------------------------- */
+.logo,
+.logo a,
+.logo images{
+  display:block;
+  width:177px; /* Width of your logo in pixels  */
+  height:50px; /* Height of your logo in pixels */
+}
+.logo{
+  background:url(../images/logo.png);
+  margin: 60px auto;
+}
+.logo:hover{
+  /* Hover states */
+  background-position:0 -00px;
+}
+.logo images{
+  position:absolute;
+  left:-99999px;
+}
+
+
+
+
+
+/* 11.3.1 FOOTER AND SOCIAL MEDIA
+    ----------------------------------------------------- */
+
+#footer {
+  padding: 30px;
+  margin-bottom: 20px;
+
+}
+
+
+
+/*
+ * social media
+ */
+
+
+.socmed {
+
+  margin: auto auto;
+  width: 255px;
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+.twitter a,.facebook a,.tumblr a,.dribbble a,.linkedin a,.rss a,.delicious a,.devianart a,.digg a,.digg2 a,.flickr a,.lastfm a,.myspace a,.picasa a,.sharethis a,.skype a,.twitter2 a,.vimeo a,.youtube a,.yahoo a,.yahoo2 a,.wikipedia a {
+  float:left;
+  background:url(../images/socmed.png) no-repeat left bottom;
+  text-indent:5000px;
+  width:32px;
+  height:32px;
+  margin-right:10px;
+  -o-transition:all .3s;
+  -moz-transition:all .3s;
+  -webkit-transition:all .3s;
+  -ms-transition:all .3s;
+}
+.twitter a:hover,.facebook a:hover,.tumblr a:hover,.dribbble a:hover,.linkedin a:hover,.rss a:hover,.delicious a:hover,.devianart a:hover,.digg a:hover,.digg2 a:hover,.flickr a:hover,.lastfm a:hover,.myspace a:hover,.picasa a:hover,.sharethis a:hover,.skype a:hover,.twitter2 a:hover,.vimeo a:hover,.youtube a:hover,.yahoo a:hover,.yahoo2 a:hover,.wikipedia a:hover {
+  background:url(../images/socmed.png) no-repeat left top;
+}
+.twitter,.twitter a{background-position:-0px bottom}
+.twitter a:hover{background-position:-0px top}
+.twitter2,.twitter2 a{background-position:-528px bottom}
+.twitter2 a:hover{background-position:-528px top}
+.facebook,.facebook a{background-position:-33px bottom}
+.facebook a:hover{background-position:-33px top}
+.tumblr,.tumblr a{background-position:-66px bottom}
+.tumblr a:hover{background-position:-66px top}
+.dribbble,.dribbble a{background-position:-99px bottom}
+.dribbble a:hover{background-position:-99px top}
+.linkedin,.linkedin a{background-position:-133px bottom}
+.linkedin a:hover{background-position:-133px top}
+.rss,.rss a{background-position:-166px bottom}
+.rss a:hover{background-position:-166px top}
+.delicious,.delicious a{background-position:-199px bottom}
+.delicious a:hover{background-position:-199px top}
+.devianart,.devianart a{background-position:-233px bottom}
+.devianart a:hover{background-position:-233px top}
+.digg,.digg a{background-position:-266px bottom}
+.digg a:hover{background-position:-266px top}
+.digg2,.digg2 a{background-position:-299px bottom}
+.digg2 a:hover{background-position:-299px top}
+.flickr,.flickr a{background-position:-331px bottom}
+.flickr a:hover{background-position:-331px top}
+.lastfm,.lastfm a{background-position:-364px bottom}
+.lastfm a:hover{background-position:-364px top}
+.myspace,.myspace a{background-position:-397px bottom}
+.myspace a:hover{background-position:-397px top}
+.picasa,.picasa a{background-position:-431px bottom}
+.picasa a:hover{background-position:-431px top}
+.sharethis,.sharethis a{background-position:-464px bottom}
+.sharethis a:hover{background-position:-464px top}
+.skype,.skype a{background-position:-497px bottom}
+.skype a:hover{background-position:-497px top}
+.vimeo,.vimeo a{background-position:-562px bottom}
+.vimeo a:hover{background-position:-562px top}
+.youtube,.youtube a{background-position:-594px bottom}
+.youtube a:hover{background-position:-594px top}
+.yahoo,.yahoo a{background-position:-628px bottom}
+.yahoo a:hover{background-position:-628px top}
+.yahoo2,.yahoo2 a{background-position:-662px bottom}
+.yahoo2 a:hover{background-position:-662px top}
+.wikipedia,.wikipedia a{background-position:-694px bottom}
+.wikipedia a:hover{background-position:-694px top}
+
+
+/* ==========================================================================
+   Progress Bar
+   ========================================================================== */
+
+
+.progress {
+  height: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  background-color: #f7f7f7;
+
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+
+}
+
+.progress .bar {
+  float: left;
+  width: 0;
+  height: 100%;
+  font-size: 22px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #f8dc23;
+  -webkit-transition: width 0.6s ease;
+  -moz-transition: width 0.6s ease;
+  -o-transition: width 0.6s ease;
+  transition: width 0.6s ease;
+}
+
+.progress {
+  padding: 3px;
+  margin-bottom: 50px;
+  border: 1px solid #FFF;
+  height: 30px;
+  position: relative;
+}
+
+/*
+ * countdown
+ */
+
+.description, .countdown {
+  margin-bottom: 20px;
+}
+.description, .countdown {
+  font-size: 14px;
+  position: relative;
+  display: block;
+  line-height: 18px;
+}
+.time span {
+  font-size: 36px;
+  line-height: 65px;
+}
+.slash {
+  margin: 0 4px;
+  display: inline;
+}
+
+.dark {
+  color: #fff;
+}
+
+
+/* ==========================================================================
+   Buttons & Inputs
+   ========================================================================== */
+form {
+  display: block;
+  font-size: .9em;
+  width: 380px;
+  color: #FFF;
+  margin: -5px auto;
+  position: relative;
+}
+input[type="text"] {
+  width: 340px;
+  background: rgba(0, 0, 0, .15);
+  padding: 15px 20px;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+::-webkit-input-placeholder {
+  color: #FFF;
+  font-weight: 700;
+}
+:-moz-placeholder {
+  color: #FFF;
+  font-weight: 700;
+}
+input[type="submit"],
+input[type="button"] {
+  display: inline-block;
+  white-space: nowrap;
+  letter-spacing: 1px;
+  color: white!important;
+  padding: 2px 22px 0;
+  margin: 0;
+  zoom: 1;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  -webkit-border-top-right-radius: 6px;
+  -webkit-border-bottom-right-radius: 6px;
+  -moz-border-top-right-radius: 6px;
+  -moz-border-bottom-right-radius: 6px;
+  -o-border-top-right-radius: 6px;
+  -o-border-bottom-right-radius: 6px;
+  transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  -webkit-appearance: none;
+  text-shadow: 0 -1px 0 #222;
+  font-weight: 700;
+  border: none;
+  min-height: 100%;
+  background: rgba(0, 0, 0, .45);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover {
+  background: rgba(0, 0, 0, .60);
+  text-decoration: none;
+}
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.strong {
+  font-weight: 700!important;
+}
+.wrap {
+  width: 70%;
+  margin: 0 auto;
+}
+.hidden-links a {
+  color: #848484;
+}
+.hidden-links a:hover {
+  text-decoration: underline;
+}
+
+/*
+ * Image replacement
+ */
+
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px;
+}
+
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+  *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+
+@media (max-width: 520px) {
+  body {
+    -webkit-background-size: none;
+    -moz-background-size: none;
+    -o-background-size: none;
+    background-size: none;
+  }
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+  }
+  .logo{
+    margin: 40px auto;
+  }
+  h1.headline,
+  h2.headline {
+    font-size: 1.4em;
+  }
+  h1.headline {
+    font-size: 1.8em;
+    font-weight: 800;
+    text-shadow: 0 -1px 0 #555;
+    -webkit-margin-before: 0;
+  }
+  h2.headline {
+    font-weight: 300;
+  }
+  p {
+    font: 300 16px/24px 'Lato', sans-serif;
+    margin: 20px 0 40px;
+  }
+
+  .row {
+    margin-left: 30px;
+    *zoom: 1;
+  }
+
+  /* ==========================================================================
+     Buttons & Inputs
+     ========================================================================== */
+
+  form {
+    width: 100%;
+  }
+  input[type="email"] {
+    width: 100%;
+    padding: 16px 20px;
+    font-size: .85em;
+  }
+  input[type="submit"],
+  input[type="button"] {
+    display: block;
+    letter-spacing: 0;
+    padding: 4px 20px 0;
+    font-size: .85em;
+  }
+}
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 144dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important; /* Black prints faster: h5bp.com/s */
+    box-shadow:none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group; /* h5bp.com/t */
+  }
+
+  tr,
+  images {
+    page-break-inside: avoid;
+  }
+
+  images {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+
+
+
+.twitter {
+
+  margin-left: auto;
+  margin-right: auto;
+}
