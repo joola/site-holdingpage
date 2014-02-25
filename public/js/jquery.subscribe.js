@@ -14,12 +14,11 @@ jQuery(document).ready(function(){
           email: $('#subemail').val()
         },
         function(data){
-          document.getElementById('mesaj').innerHTML = data;
-          $('#mesaj').slideDown('slow');
-          $('#subscribeform img.subscribe-loader').remove('slow',function(){$(this).remove()});
-          $('#subsubmit').removeAttr('disabled');
-          if(data.match('success') != null) $('#subscribeform').slideUp('slow');
-
+          console.log(data);
+          if (data.success) {
+            $('#subscribe').hide();
+            $('#thankyou').show();
+          }
         }
       );
 

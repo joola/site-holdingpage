@@ -798,3 +798,7 @@ only screen and (min-resolution: 144dpi) {
   margin-left: auto;
   margin-right: auto;
 }
+
+a, a:hover, a:visited {
+  color:#fff;
+}

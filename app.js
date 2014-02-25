@@ -9,6 +9,11 @@ var path = require('path');
 
 var app = global.app = express();
 
+//var routes = require('./routes');
+var subscribe = require('./routes/subscribe');
+
+
+
 // all environments
 app.set('port', process.env.PORT || 3000);
 app.set('views', __dirname + '/views');
@@ -19,6 +24,8 @@ app.use(express.bodyParser());
 app.use(express.methodOverride());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
+
+app.post('/subscribe', subscribe.subscribe);
 
 // development only
 if ('development' == app.get('env')) {
