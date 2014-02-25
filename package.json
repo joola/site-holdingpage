@@ -2,6 +2,7 @@
   "name": "site-holdingpage",
   "version": "0.0.1",
   "dependencies": {
-    "express": "*"
+    "express": "*",
+    "mongodb":"*"
   }
 }
